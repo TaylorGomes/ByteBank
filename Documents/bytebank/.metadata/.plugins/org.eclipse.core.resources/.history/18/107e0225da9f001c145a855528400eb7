@@ -13,10 +13,6 @@ public class TestaGetESet {
 		
 		System.out.println(conta.getTitular().getNome());
 		
-		conta.getTitular().setProfissão("programador");
-		
-		System.out.println(conta.getTitular());
-		System.out.println(taylor);
 		
 	}
 
