@@ -1,0 +1,10 @@
+
+public class TestaGetESet {
+	public static void main(String[] args) {
+		conta conta = new conta();
+		conta.SetNumero(1337);
+		System.out.println(conta.getNumero());
+		
+	}
+
+}

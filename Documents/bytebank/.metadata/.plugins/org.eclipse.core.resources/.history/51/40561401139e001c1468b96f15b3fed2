@@ -1,0 +1,27 @@
+package bytebank;
+
+public class TestaMetodo {
+	
+	public static void main(String[] args) {
+		conta contadoTaylor = new conta();
+		contadoTaylor.saldo = 100;
+		contadoTaylor.deposita(50);
+		System.out.println(contadoTaylor.saldo);
+		
+		boolean conseguiuRetirar = contadoTaylor.saca(20);
+		System.out.println(contadoTaylor.saldo);
+		System.out.println(conseguiuRetirar);
+		
+		conta  contadaMarcela = new conta();
+		contadaMarcela.deposita(1000);
+		
+		if(contadaMarcela.transfere(3000, contadoTaylor)) {
+			System.out.println("transferencia com sucesso");
+		}else {
+			System.out.println("saltou dinheiro");
+		}
+		System.out.println(contadaMarcela.saldo);
+		System.out.println(contadoTaylor.saldo);
+	}
+
+}

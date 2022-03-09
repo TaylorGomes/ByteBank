@@ -1,0 +1,10 @@
+package bytebank;
+
+public class CriaConta {
+	
+	public static void main(String[] args) {
+		Conta PrimeiraConta = new Conta();
+		
+	}
+
+}
